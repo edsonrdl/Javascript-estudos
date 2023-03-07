@@ -11,3 +11,5 @@
  let pessoa2=new Pessoa()
  pessoa1.nome='Edson';//passando dados para os atributo
  pessoa2.nome='Rodrigo';
+console.log(pessoa1)
+console.log(pessoa2)
