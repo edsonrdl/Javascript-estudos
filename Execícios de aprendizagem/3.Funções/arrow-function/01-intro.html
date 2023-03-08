@@ -7,6 +7,32 @@
 </body>
 
 <script>
+//Estrutura :
+//      const soma = (numero1 + numero2 ) => {
+//     return numero1+numero2;
+//    }
+//ex
+//Sintaxe
+// () => expression
+
+// param => expression
+
+// (param) => expression
+
+// (param1, paramN) => expression
+
+// () => {
+//   statements
+// }
+
+// param => {
+//   statements
+// }
+
+// (param1, paramN) => {
+//   statements
+// }
+
     const ireland = ['Dublin', 'Galway', 'Cork'];
 
     const love = ireland.map(function(name) {
@@ -28,5 +54,31 @@
                         .map(name => `I love ${name}!`);
 
     console.log(loveChain);
+
+
+//ex
+const soma1 = (a, b) => {
+  return a + b;
+};
+console.log(soma1(2,3))
+
+
+//Os parâmetros são passados ​​entre parênteses:
+//const MinhaFuncao = (param1, param2) => FazAlgumaCoisa(param1, param2)
+//Se tivermos um (e apenas um) parâmetro, podemos omitir completamente os parênteses:
+//const MinhaFuncao = param => FazAlgumaCoisa(param)
+
+//ex
+const soma2 =a => {
+  return a*a;
+};
+console.log(soma2(5));
+
+//Retorno implícito
+//As arrow functions permitem ter um retorno implícito, que são valores retornados sem ter que usar a palavar return.
+//Isso funciona quando existe apenas uma instrução no corpo da função:
+//ex
+const MinhaFuncao = () => 'Teste implícito'
+console.log(MinhaFuncao());
 </script>
 </html>
