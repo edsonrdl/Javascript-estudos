@@ -9,11 +9,22 @@
 <script>
 //Sem precisar colocar todos os parâmetros
 //Usa o rest para dizer que conforme os parâmetros da chamada ele vai ser executado x vezes
+//ex1
 function multiply(mult, ...args) {
     return args.map(arg => arg * mult);
 }
 
 console.log(multiply(5, 1, 2, 3, 4, 5, 6));
 
+//ex2
+function soma(...num){
+    let res=0;
+    let qtd=num.length;
+    for(let i=0;i<qtd;i++){
+    res+=num[i];
+    };
+    return res
+}
+console.log(soma(3,4,5,6,7,5));
 </script>
 </html>
