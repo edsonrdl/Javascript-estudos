@@ -9,6 +9,20 @@
 //       !==      Não idêntico a	 (a !== b)
 //       &&	      E/and	             (a && b)
 //       ll	      Ou/or	             (a ll b)
+
+
+//Ordem de precedencia
+//       não  ()
+//       .    **
+//       e    *  /  % 
+//       ou   +  -
+
+//       ()   > < <= >=
+//       !
+//       &&
+//       ||
+
+
 // Diferença entre “==”(TESTA O VALOR) e “===”(tESTA O TIPO E O VALOR )
 // É possível perceber na tabela acima, que existe tanto o símbolo de “igual a” (==), quanto o de “idêntico a” (===). Mas qual eu devo utilizar para cada situação? Se usarmos o operador “==” em uma condição, saberemos que ela só será verdadeira se o valor da esquerda for o mesmo valor da direita, por exemplo:
 
