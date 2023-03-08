@@ -1,14 +1,24 @@
-//       Operador	Operação	Exemplo
-//       >	      Maior que	         (a > b)
-//       <	      Menor que	         (a < b)
-//       >=	      Maior ou igual a	 (a >= b)
-//       <=	      Menor ou igual a	 (a <= b)
-//       ==	      Igual a	         (a == b)
-//       !=       Diferente de	     (a !== b)
-//       ===	  Idêntico a	     (a === b)
-//       !==      Não idêntico a	 (a !== b)
-//       &&	      E/and	             (a && b)
-//       ll	      Ou/or	             (a ll b)
+
+//           Operador/A	   Descrição	          Exemplo
+//           +	           Adição	              A + B = 30
+//           –	           Subtração	          A – B = -10
+//           *	           Multiplicação	      A * B = 200
+//           /	           Divisão	              B / A = 2
+//           %	           Módulo                (resto da divisão)	B % A = 0
+//           ++	           Incremento	         A++ = 11  ou (var x=3) (x=x+5 equivale x+=5)R=8 
+//           —	           Decremento	         A– = 9    ou (var y=2) (y=y-5 equivale y-=5)R=-3
+//           **            Potenciação           A**A=16
+//           Operador/lóg	Operação	          Exemplo
+//           >	            Maior que	         (a > b)
+//           <	            Menor que	         (a < b)
+//           >=	            Maior ou igual a	 (a >= b)
+//           <=	            Menor ou igual a	 (a <= b)
+//           ==	            Igual a	             (a == b)
+//           !=             Diferente de	     (a !== b)
+//           ===	        Idêntico a	         (a === b)
+//           !==            Não idêntico a	     (a !== b)
+//           &&	            E/and	             (a && b)
+//           ll	            Ou/or	             (a ll b)
 
 
 //Ordem de precedencia
