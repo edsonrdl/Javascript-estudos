@@ -2,6 +2,17 @@
 
 Básico
 
+async: Assíncrono
+await: Aguardar
+
+O async e o await são palavras-chave em JavaScript que são usadas para trabalhar com funções assíncronas, ou seja, funções que não bloqueiam a execução do código enquanto aguardam uma resposta de uma operação que pode levar algum tempo, como por exemplo, uma solicitação de rede.
+
+A palavra-chave async é usada para declarar uma função assíncrona, e permite que essa função retorne uma promessa (Promise). A promessa é um objeto que representa o resultado ou o status de uma operação assíncrona. Quando a função assíncrona é chamada, ela retorna imediatamente uma promessa, mesmo que a operação assíncrona ainda não tenha sido concluída.
+
+A palavra-chave await é usada dentro de funções assíncronas para esperar que uma promessa seja resolvida antes de continuar a execução do código. O await é seguido por uma expressão que retorna uma promessa, e o código aguarda até que a promessa seja resolvida ou rejeitada. Enquanto aguarda, a execução do código é suspensa, mas outras tarefas podem continuar a ser executadas.
+
+Em resumo, o async e o await são usados em conjunto para simplificar o código de funções assíncronas, permitindo que o código espere que uma operação assíncrona seja concluída antes de continuar, sem bloquear a execução do resto do código. Isso torna o código assíncrono mais fácil de escrever e de entender.
+
 - async/await funciona obrigatoriamente no protocolo de Promises
 - async é uma palavra chave usada no início de uma função
 - await é usado para avisar a função para esperar o resultado da Promise
