@@ -1,4 +1,4 @@
-//Método ForEach
+//Método ForEach<Para cada>
 // O método "forEach" é uma função integrada em JavaScript que permite iterar sobre os elementos de um array e executar uma ação para cada elemento, sem a necessidade de criar um loop explícito. O método "forEach" é uma alternativa ao laço "for" convencional para percorrer um array.
 
 // A sintaxe do método "forEach" em JavaScript é a seguinte:
