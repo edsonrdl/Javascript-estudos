@@ -20,6 +20,10 @@ var makePessoa = function(nome,idade,sexo){
 var rodrigo=new Pessoa('Rodrigo',21,'M');
 var roberto=new makePessoa('Roberto',25,'M');
 
+console.log(rodrigo);
+console.log(roberto);
+
+
 var pessoaCriada =Object.create(makePessoa,{
     endereco:{
         value:'Rua fulano de tal ',
