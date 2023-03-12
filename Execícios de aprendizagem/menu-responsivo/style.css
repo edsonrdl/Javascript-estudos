@@ -1,0 +1,9 @@
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
