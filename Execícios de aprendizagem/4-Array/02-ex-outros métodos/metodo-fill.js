@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>04 - Array.fill</title>
-</head>
-<body>
-</body>
 
-<script>
     const arr = new Array(50);
     arr.fill('lol', 3, 6);
     
@@ -14,10 +6,6 @@
 
     const newArr = [1,2,3,4,5,6];
 
-    newArr.fill('lol', 1, 3);
+    newArr.fill('lol', 1, 3);9
 
     console.log(newArr);
-
-
-</script>
-</html>

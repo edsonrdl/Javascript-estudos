@@ -1,3 +1,4 @@
+//Array (Map / Filter / Reduce)
 // const precos = [
 //   "Crédito",
 //   "R$ 200",
