@@ -7,7 +7,8 @@
 // - document.getElementsByTagName(tagName): seleciona um ou mais elementos HTML com a tag especificada.
 // - document.querySelector(selector): seleciona o primeiro elemento HTML que corresponde ao seletor CSS especificado.
 // - document.querySelectorAll(selector): seleciona todos os elementos HTML que correspondem ao seletor CSS especificado.
-// 1. Acesso aos elementos HTML:
+
+// . Acesso aos elementos HTML:Exemplo
 //    // Acessando um elemento pelo ID
 //    const elementById = document.getElementById('my-element-id');
 
