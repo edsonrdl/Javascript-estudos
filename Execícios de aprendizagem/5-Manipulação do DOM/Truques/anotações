@@ -1,0 +1,133 @@
+# 5 truques incríveis de DOM que você deveria conhecer.
+
+- O que é DOM?
+  document object model
+- Visualizando a DOM
+
+---
+## eventos
+
+  - on + nomedoevento
+  - addEventListener('nomedoevento', function(event) {})
+
+---
+## criação de elementos 
+
+  - .createElement()
+  - template literals ``
+
+
+  ```js
+  //template literals
+  ul.innerHTML = ul.innerHTML +`<li class="px-4 py-2 bg-white hover:bg-sky-100 hover:text-sky-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out flex justify-between">${input.value} <button class="text-red-700">ⅹ</button></li>`
+  ```
+
+  ```js
+  // createElement
+  const li = document.createElement('li')
+    li.setAttribute('class', "px-4 py-2 bg-white hover:bg-sky-100 hover:text-sky-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out flex justify-between")
+    li.innerHTML = input.value
+
+    const button = document.createElement('button')
+    button.setAttribute("class", "text-red-700")
+    button.innerHTML = "ⅹ"
+
+    li.appendChild(button)
+    ul.appendChild(li)
+
+  ```
+
+
+---
+## .cloneNode()
+
+  - deep: boolean
+
+---
+## classList
+
+  - .contains
+
+
+---
+## target
+  - event.target
+  - event.currentTarget
+
+
+### Código final
+```js
+const form = document.querySelector('form')
+const ul = document.querySelector('ul')
+
+
+form.onsubmit = function(event) {
+  event.preventDefault()
+
+  const input = form.querySelector('input')
+  const value = input.value
+
+  if(value == "") return
+
+  const li = ul.querySelector('li').cloneNode(true)
+  li.querySelector('span').textContent = value
+  ul.appendChild(li)
+
+  input.value = ""
+  
+}
+
+ul.onclick = function (event) {
+  if(event.target.classList.contains('delete')) {
+    if(confirm("Deseja deletar esse item?")) {
+      event.target.parentElement.remove()
+    }
+  }
+}
+```
+
+<!-- Para acessar a árvore DOM em um documento HTML usando JavaScript, você pode usar a propriedade document para selecionar elementos HTML e interagir com eles.
+
+Existem várias maneiras de selecionar elementos HTML. Algumas das propriedades mais comuns incluem:
+
+- document.getElementById(id): seleciona um elemento HTML com o ID especificado.
+- document.getElementsByClassName(className): seleciona um ou mais elementos HTML que têm a classe especificada.
+- document.getElementsByTagName(tagName): seleciona um ou mais elementos HTML com a tag especificada.
+- document.querySelector(selector): seleciona o primeiro elemento HTML que corresponde ao seletor CSS especificado.
+- document.querySelectorAll(selector): seleciona todos os elementos HTML que correspondem ao seletor CSS especificado.
+
+Aqui está um exemplo de como você pode usar document.getElementById() para selecionar um elemento HTML com o ID "exemplo" e alterar seu conteúdo:
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="exemplo">Olá, mundo!</div>
+  
+    <script>
+      var elemento = document.getElementById("exemplo");
+      elemento.innerHTML = "Olá, OpenAI!";
+    </script>
+  </body>
+</html>
+
+
+Ao executar este código, o conteúdo do elemento <div> com o ID "exemplo" será alterado para "Olá, OpenAI!".
+
+Além disso, você pode usar eventos para interagir com elementos da DOM. Por exemplo, você pode usar o método addEventListener() para adicionar um evento de clique a um elemento HTML e executar uma função quando o evento é acionado:
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="botao">Clique em mim!</button>
+  
+    <script>
+      var botao = document.getElementById("botao");
+      botao.addEventListener("click", function() {
+        alert("Você clicou no botão!");
+      });
+    </script>
+  </body>
+</html>
+
+
+Quando o botão é clicado, o código exibe uma caixa de diálogo com a mensagem "Você clicou no botão!". -->

@@ -14,13 +14,6 @@
 // form.addEventListener('submite',function(event){
 //     event.preventDefault();
 
-// })//pode ter quantos quise
-// Por marca getElementsbytagname()[
-//por id getElementbyId()
-//por class getElementclassName()
-//por nome getElementsByName()
-//Por seletor querySelector()
-//Por seletor querySelectorAll()
 
 
 form.addEventListener('submite',function(event){
