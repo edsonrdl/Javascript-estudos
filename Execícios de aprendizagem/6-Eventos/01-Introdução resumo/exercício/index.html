@@ -8,10 +8,19 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="area" onclick="clicar()">
+  <div class="container">
+    <div class="list">
+      <ul>
+        <li>Pode passar o mouse por cima </li>
+        <li>Pode clicar em cima </li>
+        <li>Pode tirar o mouse de cima</li>
+      </ul>
+    </div>
+  
+  <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
     interagir...
   </div>
-  
+</div>
   <script src="app.js"></script>
 </body>
 </html>
