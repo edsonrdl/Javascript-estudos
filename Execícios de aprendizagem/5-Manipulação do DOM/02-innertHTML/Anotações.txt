@@ -1,3 +1,5 @@
+innerHTM--> pega todo o conteúdo do elemento incluindo espaçamentos e tags html internas
+
 Aqui está um exemplo de como você pode usar document.getElementById() para selecionar um elemento HTML com o ID "exemplo" e alterar seu conteúdo
 Utilizando o innerHTML :
 
@@ -65,3 +67,4 @@ document.body.appendChild(newDiv);
 Este exemplo cria uma nova div com um título e um parágrafo, usando o innerHTML para definir a estrutura HTML, e adiciona a nova div à árvore DOM como um filho do elemento body.
 
 Esses são apenas alguns exemplos das muitas maneiras como o innerHTML pode ser usado para manipular a árvore DOM em JavaScript. É importante lembrar que a manipulação direta do HTML pode ter implicações de segurança, então é importante ter cuidado ao usar o innerHTML em aplicações do mundo real.
+ Atenção !

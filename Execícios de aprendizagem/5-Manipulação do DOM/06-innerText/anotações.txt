@@ -1,0 +1,2 @@
+InnerText--->Apenas o conteuúdo de texnto do elemnto e todos os seus filhos,sem espaçamento de texto oculto e tags css
+exceto os elementos <script> e style.
