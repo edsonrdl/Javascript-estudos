@@ -42,11 +42,6 @@ arrayEx3.forEach(function(element) {
 
 //  Exemplo:
 var carros=['vectra','gol','centra'];
-var getCarros =function(){
-    var carros=['vectra','gol','centra'];
-
-    return carros.splice(1,2)//splice(posicao,qtd)
-}
 
 var CarrosB=carros.splice(0,2,'relampago marquinhos','Mate');
 

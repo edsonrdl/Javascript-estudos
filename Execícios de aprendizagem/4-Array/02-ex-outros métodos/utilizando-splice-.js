@@ -17,14 +17,16 @@ console.log(array);
 
 
 //  Exemplo:
-var carros=['vectra','gol','centra'];
+
 var getCarros =function(){
     var carros=['vectra','gol','centra'];
 
     return carros.splice(1,2)//splice(posicao,qtd)
 }
-var CarrosA = getCarros(2,1);
-console.log(CarrosA);
+var CarrosA = getCarros();
+console.log( CarrosA);
+
+var carros=['vectra','gol','centra'];
 
 var CarrosB=carros.splice(0,2,'relampago marquinhos','Mate');
 console.log(`O que fica em CarrosB é um novo array com  os carros removidos: ${CarrosB}`);

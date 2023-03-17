@@ -1,5 +1,10 @@
 
-const itensNav=document.getElementsByClassName('teste-item');
-let qtdItens=itensNav.length
-console.log(qtdItens)
-const newItens=itensNav.splice()
+let itensNav=document.querySelectorAll('a');
+
+var teste=['edson','teste','teste'];
+var item=teste.forEach(function(element){
+    element
+});
+itensNav.forEach(item=>{
+    item.innerHTML=item
+});
