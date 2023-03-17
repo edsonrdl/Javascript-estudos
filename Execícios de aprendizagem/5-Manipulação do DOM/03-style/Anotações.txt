@@ -1,0 +1,25 @@
+ Manipulação de estilos CSS de elementos HTML: utilizando Dom
+   Alterando o estilo de um elemento
+   const elementToStyle = document.getElementById('style-id');
+   elementToStyle.style.backgroundColor = 'red
+   Acessando todas as folhas de estilo da página
+   const styleSheets = document.styleSheet
+   Acessando as regras de estilo de uma folha de estilo específica
+   const styleSheet = styleSheets[0];
+   const styleRules = styleSheet.cssRules || styleSheet.rules
+
+// Para alterar a cor de um elemento usando CSS, você pode usar a propriedade color no CSS. Você pode acessar o estilo do elemento utilizando a propriedade style e, em seguida, definir a cor usando a propriedade color.
+
+// Aqui está um exemplo de como você pode alterar a cor de um elemento usando JavaScript:
+
+// // Seleciona o elemento
+// const elemento = document.getElementById('meuElemento');
+
+// // Define a cor do texto do elemento
+// elemento.style.color = 'vermelho';
+
+
+// Certifique-se de que o elemento que você está tentando selecionar existe na página HTML.
+
+
+
