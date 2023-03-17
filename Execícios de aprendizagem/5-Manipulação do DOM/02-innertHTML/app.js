@@ -1,10 +1,6 @@
 
-let itensNav=document.querySelectorAll('a');
-
-var teste=['edson','teste','teste'];
-var item=teste.forEach(function(element){
-    element
-});
-itensNav.forEach(item=>{
-    item.innerHTML=item
+let itensNav=document.querySelectorAll('.teste-item');
+console.log(itensNav);
+itensNav.forEach(itens=>{
+    itens.textContent='botões';
 });
