@@ -1,6 +1,6 @@
 
 let itensNav=document.querySelectorAll('.teste-item');
 console.log(itensNav);
-itensNav.forEach(itens=>{
-    itens.textContent='botões';
-});
+console.log(itensNav[0].innerHTML);
+
+itensNav[1].innerHTML='innerHTML'
