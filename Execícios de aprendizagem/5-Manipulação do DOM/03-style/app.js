@@ -1,3 +1,5 @@
-let corteste=document.getElementById('teste');
+let corteste=document.getElementById('teste2');
 console.log(corteste);
-corteste.style.color='blue';
+console.log(corteste.style);
+corteste.style.color='red';
+corteste.style.zoom='2';
