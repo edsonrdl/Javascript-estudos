@@ -1,0 +1,7 @@
+propriedade -->>className adiciona uma class,troca toda a classe que tem dentro ate se tiver espaço
+
+
+objeto com propriedades -->>classList adiciona ou remove uma classe add/remove
+ele pode adicionar a class sem ter o atributo classe="" no elemento
+Pode tambem receber o toggle se existir ele remove se n existir ele adiciona
+Pode receber o contains para saber se existem dentro da class
