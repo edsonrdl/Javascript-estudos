@@ -1,0 +1,3 @@
+scroollTo('px')
+scroollby('x,y')
+scroollIntoView('boolean') para cima ou para baixo 

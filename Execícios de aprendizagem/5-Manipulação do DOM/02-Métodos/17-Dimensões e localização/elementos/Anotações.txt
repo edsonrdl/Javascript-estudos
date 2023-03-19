@@ -1,0 +1,5 @@
+usa o atributo 
+offsetLeft
+offsetTop
+offsetWidth
+offsetHeight

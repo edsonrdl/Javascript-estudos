@@ -1,0 +1,5 @@
+let propriedades =getComputedStyle(document.Sellector('h1));
+exemplos:
+connsole.logo(propriedade.color)
+connsole.logo(propriedade.marginTop)
+connsole.logo(propriedade.border)
