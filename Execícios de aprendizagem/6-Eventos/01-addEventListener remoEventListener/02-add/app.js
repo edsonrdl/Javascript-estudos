@@ -1,8 +1,8 @@
 
-    var eventoTest =document.getElementById('area');
-    eventoTest.addEventListener('clicou',)
-    eventoTest.addEventListener('entrou',)
-    eventoTest.addEventListener('saiu',)
+     let eventoTest =document.querySelector('#area');
+    eventoTest.addEventListener('clicou',clicar())
+    eventoTest.addEventListener('entrou', entrou())
+    eventoTest.addEventListener('saiu',saiu())
  
     function clicar(){
    
@@ -28,4 +28,3 @@
         eventoTest.style.zoom='0';
 
     }
-    
