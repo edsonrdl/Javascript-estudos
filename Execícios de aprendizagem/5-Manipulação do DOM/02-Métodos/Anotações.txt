@@ -2,34 +2,49 @@ Sim, existem vários outros métodos em JavaScript que podem ser usados para man
 
 createElement(tagName): Cria um novo elemento HTML com a tag especificada.
 
+ex:
 const newElement = document.createElement('div');
+
+
 createTextNode(text): Cria um novo nó de texto com o texto especificado.
-
+ex:
 const newText = document.createTextNode('Hello, world!');
-setAttribute(name, value): Define o valor de um atributo em um elemento HTML.
 
+
+setAttribute(name, value): Define o valor de um atributo em um elemento HTML.
+ex:
 const newElement = document.createElement('img');
 newElement.setAttribute('src', 'example.jpg');
-removeAttribute(name): Remove um atributo de um elemento HTML.
 
+
+removeAttribute(name): Remove um atributo de um elemento HTML.
+ex:
 const image = document.getElementById('example-image');
 image.removeAttribute('src');
-appendChild(newChild): Adiciona um novo nó como filho de um elemento HTML.
 
+
+appendChild(newChild): Adiciona um novo nó como filho de um elemento HTML.
+ex:
 const parentElement = document.getElementById('parent');
 const newChild = document.createElement('div');
 parentElement.appendChild(newChild);
-removeChild(child): Remove um nó filho de um elemento HTML.
 
+
+removeChild(child): Remove um nó filho de um elemento HTML.
+ex:
 const parentElement = document.getElementById('parent');
 const childElement = document.getElementById('child');
 parentElement.removeChild(childElement);
-innerHTML: Define ou retorna o conteúdo HTML de um elemento.
 
+
+innerHTML: Define ou retorna o conteúdo HTML de um elemento.
+ex:
 const element = document.getElementById('example');
 element.innerHTML = '<p>Hello, world!</p>';
-innerText: Define ou retorna o texto interno de um elemento HTML.
 
+
+innerText: Define ou retorna o texto interno de um elemento HTML.
+ex:
 const element = document.getElementById('example');
 element.innerText = 'Hello, world!';
 Esses são apenas alguns exemplos dos muitos métodos disponíveis em JavaScript para manipulação de elementos HTML. Cada método tem uma função específica e pode ser útil em diferentes situações, dependendo das necessidades do seu código.
