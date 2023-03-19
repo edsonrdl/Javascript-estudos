@@ -1,0 +1,19 @@
+clone elementos
+
+
+clonar elementos
+cloneNode('boolean')
+true  todo o atributo e elementos
+false  apenas o atributo
+
+exemplo
+
+<div class="container">
+lef testeDeMetodos=getElementbyClassName('container').cloneNode('true');
+document.querySelector('.container').after('testeDeMetodos');
+ vai aparecer tudo 
+
+lef testeDeMetodos=getElementbyClassName('container').cloneNode('false');
+document.querySelector('.container').after('testeDeMetodos');
+
+vai aparecer só a div

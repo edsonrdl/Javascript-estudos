@@ -1,0 +1,49 @@
+Criar elementos
+
+<div class="container">
+lef testeDeMetodos=getElementbyClassName('container')
+
+container.before('teste')    --> adiciona antes do div 
+container.prepend('teste')   --> antes do elemento da div
+container.append('teste')    --> Depois do elemento da div
+container.after('teste')     --> Depois da div
+ 
+
+Mão conseque adicionar atributos   <p>texto</p>   vai aparecer do mesmo jeito 
+ insertAdjacentText('beforebegin','string' )    --> adiciona antes do da div 
+ insertAdjacentText('afterbegin','string' ) --> dentro dadiv
+ insertAdjacentText('beforeend','string' ) 
+ insertAdjacentText('aftereend','string' ) 
+
+
+Consegue adicionar atributos      <p>texto</p>   vai aparecer texto ,mas dentro do parágrafo 
+ insertAdjacentHTML('beforebegin','string' )   --> adiciona antes do  div 
+ insertAdjacentHTML('afterbegin','string' )    --> antes do elemento da div
+ insertAdjacentHTML('beforeend','string' )     --> Depois do elemento da div
+ insertAdjacentHTML('aftereend','string' )     --> Depois da div
+
+Não replica o comportamento ,mas consegue criar todo o conteúdo
+
+insertAdjacentElement('beforebegin','string' )   --> adiciona antes do  div 
+insertAdjacentElement('afterbegin','string' )    --> antes do elemento da div
+insertAdjacentElement('beforeend','string' )     --> Depois do elemento da div
+insertAdjacentElement('aftereend','string' )     --> Depois da div
+
+exemplo
+
+<div class="container">
+lef testeDeMetodos=getElementbyClassName('container')
+
+
+lef paragrado=document.createElement('p');
+paragrafo.innertext='texto':
+
+insertAdjacentElement('beforebegin','string' )
+insertAdjacentElement('afterbegin','string' )
+insertAdjacentElement('beforeend','string' )
+insertAdjacentElement('aftereend','string' ) 
+
+
+vai funcionar apenas o primeiro :
+insertAdjacentElement('beforebegin','string' )
+

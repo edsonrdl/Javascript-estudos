@@ -1,0 +1,10 @@
+Remover elementos
+ document.querySelector('.container > p').remove()  --> remove o parágrafo 
+ document.querySelectorAll('.container > p')[0].remove()  --> remove o primeiro parágrafo 
+
+ Quando quer o primeiro ou o ultimo da coleção 
+ primeiro :
+ document.querySelector('.container > p: first-child').remove()
+
+ultimo:
+ document.querySelector('.container > p: last-child').remove()
