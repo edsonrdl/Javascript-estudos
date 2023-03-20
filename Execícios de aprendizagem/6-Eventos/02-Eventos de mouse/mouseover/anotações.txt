@@ -1,0 +1,33 @@
+O evento mouseover em JavaScript é acionado quando o cursor do mouse entra em um elemento específico na página da web. Esse evento é útil para detectar quando o cursor do mouse está sobre um elemento, permitindo que você execute ações como exibir informações adicionais ou adicionar efeitos visuais.
+Onde "elemento" é uma referência ao elemento HTML que deseja monitorar para o evento mouseover e "minhaFuncao" é o nome da função que será executada quando o evento mouseover ocorrer.
+
+Aqui está um exemplo simples que adiciona um manipulador de eventos mouseover a um elemento de imagem e adiciona uma borda à imagem quando o cursor está sobre ela:
+
+
+html
+
+<img id="minhaImagem" src="imagem.png">
+JavaScript:
+
+javascript
+
+const imagem = document.getElementById("minhaImagem");
+imagem.addEventListener("mouseover", function() {
+  imagem.style.border = "1px solid red";
+});
+Nesse exemplo, o evento mouseover é adicionado à imagem usando a função addEventListener(). Quando o cursor do mouse está sobre a imagem, a função anônima que foi passada como segundo argumento é executada e adiciona uma borda vermelha de 1 pixel à imagem.
+
+Você também pode usar uma função nomeada em vez de uma função anônima para lidar com o evento mouseover:
+
+javascript
+
+function handleMouseOver() {
+  // código para manipular o evento mouseover aqui
+}
+
+const imagem = document.getElementById("minhaImagem");
+imagem.addEventListener("mouseover", handleMouseOver);
+Nesse exemplo, a função handleMouseOver() é definida e passada como segundo argumento para addEventListener(). Quando o cursor do mouse está sobre a imagem, a função handleMouseOver() é executada e manipula o evento mouseover de acordo com o código que foi escrito dentro dela.
+
+
+
