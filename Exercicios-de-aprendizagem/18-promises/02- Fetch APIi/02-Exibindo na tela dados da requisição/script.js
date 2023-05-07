@@ -9,4 +9,11 @@ fetch('https://ranekapi.origamid.dev/json/api/produto')
     document.querySelector('#app').innerHTML = nomes;
     console.log(jsonBody);
   });
- 
+  //Ou usando o map
+  // fetch('https://ranekapi.origamid.dev/json/api/produto')
+  // .then((r) => r.json())
+  // .then((jsonBody) => {
+  //   const nomes = jsonBody.map((produto) => produto.nome);
+  //   document.querySelector('#app').innerHTML = nomes.join('<br>');
+  //   console.log(jsonBody);
+  // });

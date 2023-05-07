@@ -1,0 +1,57 @@
+O método "textContent" em JavaScript é usado para obter ou definir o conteúdo de texto de um elemento HTML. 
+Ele retorna ou altera apenas o conteúdo de texto de um elemento, excluindo as tags HTML que possam estar contidas nele.
+ Sintaxe:
+ element.textContent   getter
+ element.textContent = novoTexto   setter
+ Descrição:
+ "element" é o elemento HTML que terá seu conteúdo de texto retornado ou definido.
+ Quando usado como getter, o método "textContent" retorna o conteúdo de texto do elemento especificado, sem as tags HTML.
+ Quando usado como setter, o método "textContent" define o conteúdo de texto do elemento especificado como o valor da string "novoTexto".
+ Todas as tags HTML que possam estar contidas no elemento serão removidas e substituídas pelo novo texto especificado.
+ Exemplo:
+ {* <div id="exemplo">Este é um <strong>exemplo</strong> de conteúdo de texto</div>
+ <script>
+   let elemento = document.getElementById("exemplo");
+   let conteudo = elemento.textContent;
+   console.log(conteudo); // "Este é um exemplo de conteúdo de texto"
+   elemento.textContent = "Novo conteúdo de texto";
+   console.log(elemento.innerHTML); // "<strong>Novo conteúdo de texto</strong>"
+ </script> *}
+ Neste exemplo, o método "textContent" é usado para obter o conteúdo de texto do elemento com o id "exemplo" e atribuí-lo à variável "conteudo". 
+Em seguida, o método "textContent" é usado como setter para definir o novo conteúdo de texto do elemento como "Novo conteúdo de texto". 
+O método "innerHTML" é usado para exibir o conteúdo completo do elemento, incluindo as tags HTML. 
+Note que o método "textContent" removeu as tags HTML do elemento, enquanto o método "innerHTML" exibe todo o conteúdo, incluindo as tags HTML.
+ O método "map" em JavaScript é usado para criar um novo array a partir de um array existente, aplicando uma função a cada elemento do array original. Ele executa uma função de callback para cada elemento do array original e retorna um novo array com os resultados dessas chamadas de função.
+ Sintaxe:
+ let novoArray = arrayOriginal.map(callback[, thisArg])
+Descrição:
+"arrayOriginal" é o array a partir do qual um novo array será criado.
+"callback" é a função que será chamada para cada elemento do array original. Essa função recebe três argumentos:
+"elementoAtual": o elemento atual sendo processado no array.
+"indice": o índice do elemento atual no array.
+"arrayOriginal": o array original que está sendo percorrido.
+"thisArg" (opcional) é um valor que será usado como "this" ao executar a função de callback.
+O método "map" não modifica o array original, mas cria um novo array com os resultados das chamadas de função de callback.
+O novo array terá o mesmo tamanho do array original, e cada elemento será o resultado da função de callback aplicada ao elemento correspondente no array original.
+Exemplo:
+
+var numeros = [1, 2, 3, 4, 5];
+var quadrados = numeros.map(function(numero) {
+  return numero * numero;
+});
+console.log(quadrados);// [1, 4, 9, 16, 25]
+
+Neste exemplo, o método "map" é usado para criar um novo array "quadrados" a partir do array original "numeros".
+A função de callback é definida como uma função anônima que recebe um argumento "numero" e retorna o quadrado desse número.
+O método "map" executa essa função para cada elemento do array "numeros" e cria um novo array "quadrados" com os resultados das chamadas de função. 
+O novo array "quadrados" contém os quadrados de cada número do array original "numeros
+Exemplo :
+
+    const list = document.querySelectorAll('#list li');
+    const listArray = Array.from(list)
+    console.log(listArray);//Vai criar um array com os indices e o elemento (li)
+
+    const names = listArray.map(name => name.textContent);//vai mapear o array e pegar de cada elemento li o texto que contem na tag <li>
+    const NovosNames = listArray.map(name => name.textContent='Heitor','David','Isabella');//vai mapear o array é usado como setter para definir o novo conteúdo de texto do elemento para a tag <li>
+
+    console.log(names);
