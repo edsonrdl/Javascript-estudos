@@ -39,6 +39,7 @@ return this._sexo;
     }
    }
 });
+
 Object.preventExtensions(pessoa);//tornar objeto n acessível
 console.log(Object.isExtensible(pessoa));
 

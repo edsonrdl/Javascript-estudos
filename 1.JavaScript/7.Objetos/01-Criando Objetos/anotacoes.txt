@@ -1,0 +1,8 @@
+Em JavaScript, um objeto é uma coleção de propriedades, que podem ser métodos ou atributos, e é definido entre chaves {}. As propriedades de um objeto são nomeadas e podem ser acessadas através do operador . ou do operador de colchetes [].
+A sintaxe para criar um objeto literal é a seguinte:
+
+const objeto = {
+  propriedade1: valor1,
+  propriedade2: valor2,
+  //...
+}
