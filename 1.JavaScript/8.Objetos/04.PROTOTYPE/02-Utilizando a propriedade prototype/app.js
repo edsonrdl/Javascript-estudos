@@ -4,14 +4,14 @@ function Pessoa(nome,idade,sexo,cabelo){
      this.sexo=sexo;
  }
  Pessoa.prototype.getNome=function(){
-    return this.nome;
+    return this._nome;
  }
  Pessoa.prototype.getIdade=function(){
     return this.idade;
  }
 
 var rodrigo=new Pessoa('Rodrigo',21,'M');
- var joao=new Pessoa('João',19,'M');
+var joao=new Pessoa('João',19,'M');
 
 console.log(rodrigo.getNome(),rodrigo.getIdade())
 console.log(joao.getNome(),joao.getIdade())
