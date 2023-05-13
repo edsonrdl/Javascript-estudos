@@ -4,14 +4,14 @@ var pessoa={
     sobrenome:'lima',
     idade:'29',
     getNome:function(){
-       return this.nome;
+       return pessoa.nome;
     }
 };
 var carros={
     nome:'Gol',
     sobrenome:'VW',
     getNome:function(){
-       return this.nome;
+       return carros.nome;
     }
 }
 console.log(pessoa.getNome());
