@@ -1,5 +1,0 @@
-call e apply são semelhantes e ambos permitem que você defina o valor this e os argumentos a serem passados para a função. A diferença é que, em call, os argumentos são passados diretamente na lista de argumentos da função, enquanto em apply os argumentos são passados em um array.
-
-bind, por outro lado, cria uma nova função que, quando chamada, tem o this definido como o objeto passado no primeiro parâmetro e com os argumentos especificados no momento da criação da nova função. A nova função não é chamada imediatamente, mas pode ser chamada posteriormente.
-
-Em resumo, call e apply chamam imediatamente a função com o this definido, enquanto bind retorna uma nova função com o this definido que pode ser chamada posteriormente.
