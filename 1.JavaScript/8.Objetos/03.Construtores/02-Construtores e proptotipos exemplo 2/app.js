@@ -4,12 +4,14 @@ function Pessoa(nome,idade,sexo){
     this._nome=this.nome;
     this.idade=this.idade;
     this.sexo=this.sexo;
+
     Object.defineProperties(this,{
         _nome:{
             enumerable:true,
             configurable:true,
             writable:true
         },
+
         nome:{
             get:function(){
                 return this._nome;
@@ -18,10 +20,10 @@ function Pessoa(nome,idade,sexo){
                 this._nome=value;
             }
         }
-
     });
     Object.preventExtensions(this);//não vai poder ser adicionado novas propriedades
-}
+};
+
 var rodrigo=new pessoa('Rodrigo',29,'M');//quando usa new ele cria um objeto
 console.log(rodrigo);
 

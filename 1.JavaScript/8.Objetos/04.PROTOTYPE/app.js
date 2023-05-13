@@ -1,19 +1,4 @@
-//Prototype é uma forma que diz que tudo que herdar dele vai ter a mesma característica 
-// function Pessoa(nome,idade,sexo,cabelo){
-//     this._nome=this.nome;
-//     this.idade=this.idade;
-//     this.sexo=this.sexo;
-//     this.getNome=function(){
-//         return this.nome;
-//     }
-// }
-// var rodrigo=new Pessoa('Rodrigo',21,'M');
-// var joao=new Pessoa('João',19,'M');
-// console.log(rodrigo.getNome(),joao.getNome())
-
-
-//outra maneira 
- function Pessoa(nome,idade,sexo,cabelo){
+function Pessoa(nome,idade,sexo,cabelo){
      this._nome=this.nome;
      this.idade=this.idade;
      this.sexo=this.sexo;
@@ -25,7 +10,7 @@
     return this.idade;
  }
 
-  var rodrigo=new Pessoa('Rodrigo',21,'M');
+var rodrigo=new Pessoa('Rodrigo',21,'M');
  var joao=new Pessoa('João',19,'M');
 
 console.log(rodrigo.getNome(),rodrigo.getIdade())
