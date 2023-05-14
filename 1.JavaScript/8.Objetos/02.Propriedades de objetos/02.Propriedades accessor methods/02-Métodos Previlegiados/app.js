@@ -9,7 +9,6 @@ var pessoa=(function(nome,idade,sexo){
 })('Rodrigo',28,'M');
 console.log(pessoa);
 
-
 var pessoa=(function(nome,idade,sexo){
     var nome=nome;
     var idade=idade;
@@ -74,4 +73,4 @@ for(propriedades in pessoa){
 
 pessoa.setNome('André');
 
-console.log(pessoa.getNome())
+console.log(pessoa.getNome());

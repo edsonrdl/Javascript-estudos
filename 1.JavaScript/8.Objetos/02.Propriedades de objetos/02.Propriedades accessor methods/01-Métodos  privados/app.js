@@ -1,15 +1,13 @@
-//Membros previlegiados
 var pessoa=(function(nome,idade,sexo){
     return {
         nome:nome,
         idade:idade,
         sexo:sexo,
     }
-
 })('Rodrigo',28,'M');
+
 console.log(pessoa);
 
-//Membros Privados
 var pessoa=(function(nome,idade,sexo){
     var nome=nome;//privados /as informações são armazenadas aqui 
     var idade=idade;
@@ -30,9 +28,8 @@ var pessoa=(function(nome,idade,sexo){
         getIdade: getIdade,
     }
 
-    Object.freeze(metodos);//os metodos previlegiados que ja existem n podem ser modificados ,estão congelados
-
-    return metodos;
+Object.freeze(metodos);//os metodos previlegiados que ja existem n podem ser modificados ,estão congelados
+return metodos;
 
 })('Rodrigo',28,'M');
 
