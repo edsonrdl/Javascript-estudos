@@ -31,7 +31,8 @@ var pessoa=(function(nome,idade,sexo){
     }
     var setIdade= function(value){
         idade=value;
-    }
+    };
+
     var metodos= {
         getNome: getNome,
         getSexo: getSexo,
@@ -39,7 +40,8 @@ var pessoa=(function(nome,idade,sexo){
         setNome: setNome,
         setSexo: setSexo,
         setIdade: setIdade,
-    }
+    };
+
     Object.defineProperties(metodos,{
         getNome:{
             enumerable:false
@@ -61,15 +63,15 @@ var pessoa=(function(nome,idade,sexo){
         },
      
     });
+
     Object.freeze(metodos);
     return metodos;
 
 })('Rodrigo',28,'M');
 
-
 for(propriedades in pessoa){
-    console.log(propriedades)
-}
+    console.log(propriedades);
+};
 
 pessoa.setNome('André');
 

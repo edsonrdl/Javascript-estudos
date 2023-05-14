@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>03 - Classes Extended</title>
-</head>
-<body>
-</body>
 
-<script>
-    
     class Animal {
-        constructor(name) {
+        constructor (name) {
             this.name = name;
         }
 
@@ -31,5 +22,3 @@
 
     const elephant = new Animal('Dumbo');
     const dog = new Dog('Jake', 'auau');
-</script>
-</html>
