@@ -5,7 +5,7 @@ function Pessoa(nome,idade,sexo){
     this._sexo=sexo;
 }
 Pessoa.prototype={
-    constructor:Pessoa,//Para definir que realmente é instância
+    constructor:Pessoa,//Para definir que realmente é instância da function Pessoa que é uma função construtora
     getNome:function(){
         return this._nome;
     },
