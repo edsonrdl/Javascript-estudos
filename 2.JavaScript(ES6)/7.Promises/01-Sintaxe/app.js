@@ -1,5 +1,5 @@
 //Exemplo:
-var defer = new Promise((resolve, reject) => {
+var myPromisse = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (true) {
                 resolve('Olá,Mundo !');
@@ -9,7 +9,7 @@ var defer = new Promise((resolve, reject) => {
         }, 2000);
     });
     
-    defer
+    myPromisse
         .then((data) => {
             console.log(data);
             return 'A promessa foi resolvida';
@@ -31,11 +31,11 @@ function gerarNumeroAleatorio(tempo) {
     });
   }
   
-  // Utilizando a promessa criada
+// Utilizando a promessa criada
   gerarNumeroAleatorio(2000) // espera 2 segundos
     .then(numero => console.log(`O número gerado foi ${numero}`))
     .catch(erro => console.log(`Erro: ${erro}`));
 
-    //Math.floor>Arredonda para baixo 
-    //Math.random() gera um número aleatório 
+//Math.floor>Arredonda para baixo 
+//Math.random() gera um número aleatório 
   
