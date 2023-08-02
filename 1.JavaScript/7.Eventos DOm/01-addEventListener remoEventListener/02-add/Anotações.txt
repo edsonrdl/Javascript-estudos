@@ -1,0 +1,10 @@
+ Não precisa do on+nomeDoEvento
+ exemplo onClick --> click 
+ O método addEventListener é usado para registrar um ouvinte de eventos em um elemento DOM. A sintaxe é a seguinte:
+ elemento.addEventListener(evento, funçãoDeResposta, usoCaptura)
+ Onde elemento é a referência do elemento HTML que terá o ouvinte adicionado, evento é uma string que representa o tipo de evento a ser escutado (como "click", "keydown", etc.), funçãoDeResposta é a função que será executada quando o evento for disparado e usoCaptura é um valor booleano opcional que determina a ordem em que os ouvintes são chamados
+ Por exemplo, o seguinte código adiciona um ouvinte de evento de clique a um botão com o ID "meuBotao":
+ let meuBotaoEl = document.getElementById("meuBotao");
+ meuBotaoEl.addEventListener("click", function() {
+     alert("O botão foi clicado!");
+ });

@@ -1,0 +1,11 @@
+
+## eventos
+
+  - on + nomedoevento
+  São adicionados como atributos
+  Exemplo:
+  <div class="" onClick='clicar()'></div>
+
+
+
+

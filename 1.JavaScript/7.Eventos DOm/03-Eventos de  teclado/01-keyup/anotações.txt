@@ -1,0 +1,1 @@
+keyup mostra o q está sendo introduzido

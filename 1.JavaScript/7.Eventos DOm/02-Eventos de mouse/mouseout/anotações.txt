@@ -1,0 +1,29 @@
+O evento mouseout em JavaScript é acionado quando o cursor do mouse sai de um elemento específico na página da web. Esse evento é útil para detectar quando o cursor do mouse não está mais em um elemento, permitindo que você execute ações de limpeza ou redefina o estado do elemento.
+Onde "elemento" é uma referência ao elemento HTML que deseja monitorar para o evento mouseout e "minhaFuncao" é o nome da função que será executada quando o evento mouseout ocorrer.
+
+Aqui está um exemplo simples que adiciona um manipulador de eventos mouseout a um elemento de imagem e remove a borda da imagem quando o cursor sai da imagem:
+
+
+html
+<img id="minhaImagem" src="imagem.png">
+JavaScript:
+
+javascript
+
+const imagem = document.getElementById("minhaImagem");
+imagem.addEventListener("mouseout", function() {
+  imagem.style.border = "";
+});
+Nesse exemplo, o evento mouseout é adicionado à imagem usando a função addEventListener(). Quando o cursor do mouse sai da imagem, a função anônima que foi passada como segundo argumento é executada e remove a borda da imagem.
+
+Você também pode usar uma função nomeada em vez de uma função anônima para lidar com o evento mouseout:
+
+javascript
+
+function handleMouseOut() {
+  // código para manipular o evento mouseout aqui
+}
+
+const imagem = document.getElementById("minhaImagem");
+imagem.addEventListener("mouseout", handleMouseOut);
+Nesse exemplo, a função handleMouseOut() é definida e passada como segundo argumento para addEventListener(). Quando o cursor do mouse sai da imagem, a função handleMouseOut() é executada e manipula o evento mouseout de acordo com o código que foi escrito dentro dela.

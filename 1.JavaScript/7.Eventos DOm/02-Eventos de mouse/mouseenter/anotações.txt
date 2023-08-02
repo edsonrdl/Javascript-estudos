@@ -1,0 +1,25 @@
+O evento mouseenter em JavaScript é acionado quando o cursor do mouse entra em um elemento específico na página da web. Diferente do evento mouseover, o evento mouseenter é acionado apenas uma vez quando o cursor entra no elemento, mesmo que o cursor se mova dentro do elemento.
+Aqui está um exemplo simples que adiciona um manipulador de eventos mouseenter a um elemento de imagem e altera a borda da imagem quando o cursor entra na imagem:
+
+
+html
+<img id="minhaImagem" src="imagem.png">
+JavaScript:
+
+javascript
+const imagem = document.getElementById("minhaImagem");
+imagem.addEventListener("mouseenter", function() {
+  imagem.style.border = "solid 2px red";
+});
+Nesse exemplo, o evento mouseenter é adicionado à imagem usando a função addEventListener(). Quando o cursor do mouse entra na imagem, a função anônima que foi passada como segundo argumento é executada e altera a borda da imagem para "solid 2px red".
+
+Você também pode usar uma função nomeada em vez de uma função anônima para lidar com o evento mouseenter:
+
+javascript
+function handleMouseEnter() {
+  // código para manipular o evento mouseenter aqui
+}
+
+const imagem = document.getElementById("minhaImagem");
+imagem.addEventListener("mouseenter", handleMouseEnter);
+Nesse exemplo, a função handleMouseEnter() é definida e passada como segundo argumento para addEventListener(). Quando o cursor do mouse entra na imagem, a função handleMouseEnter() é executada e manipula o evento mouseenter de acordo com o código que foi escrito dentro dela.
