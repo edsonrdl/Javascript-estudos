@@ -1,3 +1,0 @@
-## target
-  - event.target
-  - event.currentTarget
