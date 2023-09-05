@@ -2,7 +2,7 @@
 var myPromisse = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (true) {
-                resolve('Olá,Mundo !');
+                resolve('Olá,Me chamo Monkey D. Luffy !');
             } else {
                 reject('Error!');
             }

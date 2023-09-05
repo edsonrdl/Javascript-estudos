@@ -1,6 +1,6 @@
-As promessas em JavaScript segueAs promessas e javascript segue  a seguinte sintaxe:
+As promessas em JavaScript segue a seguinte sintaxe:
 
-const minhaPromise = new Promise((resolve, reject) => {
+const minhaPromise = new Promise ((resolve, reject) => {
   // código que pode eventualmente resolver ou rejeitar a promessa
 });
 
@@ -8,4 +8,4 @@ Aqui está uma breve explicação sobre os parâmetros usados:
 
 resolve: é uma função que deve ser chamada quando a promessa é resolvida com sucesso. Ela pode receber um valor que será passado para a próxima etapa da promessa, geralmente usando o método then().
 reject: é uma função que deve ser chamada quando a promessa é rejeitada. Ela pode receber uma mensagem de erro que será passada para a próxima etapa da promessa, geralmente usando o método catch().
-A partir daqui, é possível encadear métodos then() para manipular o resultado da promessa e lidar com erros usando o método catch().
+A partir daqui, é possível encadear métodos then() para manipular :o resultado da promessa e lidar com erros usando o método catch().
