@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>01 - Spread Operator Intro</title>
-</head>
-<body>
-</body>
 
-<script>
     //O spred/espalhar 
     //Serve para espalhar para cada elemento(chave e conteúdo) do array
     let front = ['react', 'vue', 'angular'];
@@ -56,5 +48,3 @@ class Pessoa{
      let pessoa2=new Pessoa('Rodrigo',45,70);
      console.log({...pessoa1})
      console.log({...pessoa2})
-</script>
-</html>
